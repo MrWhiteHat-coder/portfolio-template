@@ -3,93 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Template - Your Name</title>
+    <title>Lumina Portfolio - Premium Portfolio Template</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?font-family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Lumina is a premium portfolio template designed for creative professionals, developers, and designers who want to showcase their work in style.">
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>Your Name</h1>
-            <p>Web Developer & Designer</p>
-            <nav>
+            <div class="logo">
+                <h1><span class="logo-text">Lumina</span><span class="logo-accent">.</span></h1>
+            </div>
+            <nav class="nav-menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2><span class="logo-text">Lumina</span><span class="logo-accent">.</span></h2>
+            <div class="mobile-menu-close" id="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+                <li><a href="#blog" class="mobile-nav-link">Blog</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h2>Hello, I'm Your Name</h2>
-            <p>Creating beautiful and functional websites</p>
-            <a href="#portfolio" class="btn-primary">View My Work</a>
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="name-highlight">Alex Morgan</span></h1>
+                <p class="hero-subtitle">Creative Developer & UI/UX Designer</p>
+                <div class="hero-description">
+                    <p>CENTER>I create <span class="typing-text"></span></p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/400x500" alt="Alex Morgan" class="hero-img">
+                <div class="hero-shape"></div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Passionate about creating digital experiences that inspire</p>
             <div class="about-content">
-                <img src="https://via.placeholder.com/300x400" alt="Your Photo" class="about-img">
                 <div class="about-text">
-                    <p>I'm a passionate web developer with expertise in creating modern, responsive websites. I specialize in turning ideas into beautiful, functional websites that engage users and drive results.</p>
-                    <p>With a focus on clean code and user-centered design, I strive to deliver projects that exceed expectations.</p>
-                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                    <p>I'm a passionate web developer and designer with over 5 years of experience creating beautiful, functional websites and applications. My expertise spans across frontend development, UI/UX design, and digital strategy.</p>
+                    <p>I believe in crafting digital experiences that not only look stunning but also provide exceptional user experiences. My approach combines creativity with technical precision to deliver solutions that exceed client expectations.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x500" alt="Alex Morgan" class="about-img">
+                    <div class="image-overlay"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">Technical expertise I bring to every project</p>
+            <div class="skills-content">
+                <div class="skills-left">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-category>HTML>
+                    class="skill-name">CSS3</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">React.js</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">UI/UX Design</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-right">
+                <h3>Professional Skills</h3>
+                <div class="skill-item">
+                    <div class="skill-name">Project Management</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Client Communication</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Problem Solving</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Time Management</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>My Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Project 1">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title</h3>
-                        <p>Brief description of the project</p>
-                        <a href="#" class="btn-tertiary">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title</h3>
-                        <p>Brief description of the project</p>
-                        <a href="#" class="btn-tertiary">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Project 3">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title</h3>
-                        <p>Brief description of the project</p>
-                        <a href="#" class="btn-tertiary">View Project</a>
-                    </div>
-                </div>
-                <!-- Add more portfolio items as needed -->
+            <h2 class="section-title">My Portfolio</h2>
+            <p class="section-subtitle">Featured projects I'm proud of</p>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
             </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400" alt="E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <p>A modern e-commerce solution with seamless checkout experience</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Mobile App">
+                        <div class="portfolio-overlay">
+                            <h3>Fitness Tracking App</h3>
+                            <p>Mobile application for tracking workouts and nutrition goals</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Brand Identity">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity Design</h3>
+                            <p>Complete brand identity system for a tech startup</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Website Redesign</h3>
+                            <p>Modern, responsive website for a financial services company</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Food Delivery App">
+                        <div class="portfolio-overlay">
+                            <h3>Food Delivery Application</h3>
+                            <p>On-demand food delivery platform with real-time tracking</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Logo Design">
+                        <div class="portfolio-overlay">
+                            <h3>Logo & Branding Suite</h3>
+                            <p>Custom logo design and brand guidelines for a coffee shop</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-load-more">
+                <button class="btn-primary">Load More Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <p class="section-subtitle">Feedback from satisfied clients</p>
+            <div class="testimonials-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Alex transformed our outdated website into a modern, user-friendly platform that increased our conversion rates by 40%. Their attention to detail and communication throughout the project was exceptional."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60" alt="Client Photo">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, TechStartup Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Working with Alex was a pleasure. They delivered our mobile app ahead of schedule and under budget, while maintaining the highest quality standards."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60" alt="Client Photo">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Product Manager, HealthApp Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Alex's design skills are exceptional. They created a brand identity that perfectly captures our company's vision and values."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60" alt="Client Photo">
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Founder, BrewHouse Cafe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Insights</h2>
+            <p class="section-subtitle">Thoughts on design, development, and digital trends</p>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Blog Post 1">
+                        <span class="blog-category">Web Design</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>The Future of Responsive Design in 2024</h3>
+                        <p>As technology continues to evolve, responsive design remains crucial for delivering optimal user experiences across devices.</p>
+                        <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Blog Post 2">
+                        <span class="blog-category">Development</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Why Accessibility Should Be Your Priority</h3>
+                        <p>Creating inclusive digital experiences isn't just ethical—it's essential for reaching your full audience potential.</p>
+                        <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Blog Post 3">
+                        <span class="blog-category">Design</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Color Theory in Modern UI Design</h3>
+                        <p>Understanding color psychology can dramatically improve the effectiveness of your user interfaces.</p>
+                        <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-primary">View All Blog Posts</a>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's create something amazing together</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@alexmorgan.dev</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this regarding?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span class="logo-text">Lumina</span><span class="logo-accent">.</span></h2>
+                    <p>Creating exceptional digital experiences</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home.html"
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
